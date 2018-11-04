@@ -1,0 +1,24 @@
+page {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+.container .userinfo-avatar {
+  width: 700rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  background: linear-gradient(to right, red, orange);
+  color: #fff;
+  line-height: 100rpx;
+  font-size: 36rpx;
+}
+.container .userinfo-avatar:after {
+  border: none;
+}

@@ -1,0 +1,29 @@
+//out: index.wxss
+
+page {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.index-page{
+    .userinfo{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        box-sizing:border-box;
+        background: #fff;
+        .userinfo-avatar {
+            width: 100rpx;
+            height: 100rpx;
+            margin: 20rpx;
+            border-radius: 50%;
+            background-size: cover;
+            background-color: white;
+        }
+        
+        .userinfo-avatar:after {
+            border: none;
+        }
+    }
+}

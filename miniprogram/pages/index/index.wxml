@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="index-page">
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+  </view>
+</view>
