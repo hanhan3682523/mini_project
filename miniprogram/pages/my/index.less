@@ -1,0 +1,74 @@
+// out: index.wxss, compress:true, sourceMap:false
+
+page {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+}
+.my-page{
+    .userinfo{
+        height:300rpx;
+        background:#fff;
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        .icon{
+            width: 100rpx;
+            height: 100rpx;
+            margin: 20rpx;
+            border-radius: 50%;
+        }
+        .name{
+            font-size: 30rpx;
+            color: #000;
+            margin-bottom: 10rpx;
+        }
+    }
+
+    .menu{
+        background: #fff;
+        margin-top: 20rpx;
+        padding-left: 40rpx;
+        .item{
+            height: 100rpx;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            .icon{
+                width: 32rpx;
+                height: 32rpx;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEX////Y2NjY2NjU1NTT09PS0tLR0dHPz8/IyMjHx8etra2srKyrq6urq6ulpaWjo6Ojo6OgoKCampqZmZmZmZkT7NuRAAAAFHRSTlMAYWJsb3F0d4qNztDR0+Hl5u39/kXWuC4AAAB/SURBVDjLrdNHFoAgDAXAYMFe8+9/VhcoiPIoYnaBgVCJ4A0K9AMEkCdiAcAqHEkcYD5nZH4kKUCM0oB6FC8wYTNgRf8C1dIZ0C1l+hq8IP+gfr8s/VJSgJlRJV+AnFsL6DJX234b5ATF0JBdz9rmcw3pwD5+xy4CIPey8r43HX9HKOvwXcXyAAAAAElFTkSuQmCC) no-repeat;
+                background-size: contain;
+                margin-right: 30rpx;
+            }
+            .name{
+                font-size: 28rpx;
+                color: #333;
+                flex: 1;
+            }
+            .right{
+                width: 10px;
+                height: 12px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWAQMAAADO9u9ZAAAABlBMVEX///+QkJApn3LQAAAAAXRSTlMAQObYZgAAADNJREFUCB0FwTENACAMALASDj4UIIQTSZMwaZMyKbQeTXA5bBYzjaIJgjbKTIvN4RI0zwcsGAkbSz8YrwAAAABJRU5ErkJggg==) no-repeat;
+                background-size: contain;
+                margin-right: 20rpx;
+            }
+        }
+        .btn{
+            margin:0;
+            padding:0;
+            border-radius:0;
+            background:none;
+            text-align:left;
+        }
+        .btn::after{
+            border: 0;
+        }
+        .item:last-child{
+            border-bottom: 0;
+        }
+    }
+}

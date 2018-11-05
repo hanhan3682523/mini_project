@@ -1,2 +1,19 @@
-<!--pages/my/index.wxml-->
-<text>pages/my/index.wxml</text>
+<view class="my-page">
+    <view class="userinfo">
+        <image class="icon" src="{{userInfo.avatarUrl}}"></image>
+        <text class="name">{{userInfo.nickName}}</text>
+    </view>
+    <!-- 菜单列表 -->
+    <view class="menu">
+        <button class="item btn" bindcontact="handleContact" open-type="contact">
+            <view class="icon"></view>
+            <text class="name">意见反馈</text>
+            <view class="right"></view>
+        </button>
+        <view class="item">
+            <view class="icon"></view>
+            <text class="name">关于我们</text>
+            <view class="right"></view>
+        </view>
+    </view>
+</view>

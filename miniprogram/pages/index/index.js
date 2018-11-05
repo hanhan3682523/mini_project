@@ -14,17 +14,17 @@ Page({
         logged: false,
         takeSession: false,
         requestResult: '',
-        classifyList:[]
+        classifyList: []
     },
 
-    onLoad: function () {
+    onLoad: function() {
 
     },
 
     /*
         页面展示时执行
     */
-    onShow: function () {
+    onShow: function() {
         this.init();
         //获取分类
         this.getClassify();
@@ -58,7 +58,9 @@ Page({
             _this.setData({
                 avatarUrl: res.userInfo.avatarUrl,
                 userInfo: res.userInfo
-            })
+            });
+            //存储用户信息
+            wx.setStorageSync('userinfo', res.userInfo);
         }).then(() => {
             //获取云端信息
             _this.onGetOpenid();
@@ -70,7 +72,7 @@ Page({
     */
     onGetOpenid() {
         let value = wx.getStorageSync('openid')
-        if(value){
+        if (value) {
             app.globalData.openid = value;
             return;
         }
@@ -84,7 +86,7 @@ Page({
             let _where = {
                 "_openid": app.globalData.openid
             };
-            wx.setStorageSync('openid',app.globalData.openid);
+            wx.setStorageSync('openid', app.globalData.openid);
             dbFun.getData(_tablename, _where).then(data => {
                 if (data.length <= 0) {
                     //添加用户
@@ -112,9 +114,9 @@ Page({
         let _this = this;
         let _tablename = const_data.tablename.classify;
         dbFun.getData(_tablename).then(data => {
-            console.info('分类信息：',data);
+            console.info('分类信息：', data);
             _this.setData({
-                classifyList:data
+                classifyList: data
             });
         });
     }
