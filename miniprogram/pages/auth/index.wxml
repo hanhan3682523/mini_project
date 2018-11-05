@@ -1,8 +1,9 @@
 
-<view class="container">
-   <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-    >用户授权</button>
+<view class="auth-page">
+    <image class="img" src="../../images/my-image.jpg"></image>
+    <view class="title">前端面试通申请获得以下权限：</view>
+    <view class="des">获得你的微信公开信息(昵称、头像等)</view>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar">
+        用户授权
+    </button>
 </view>

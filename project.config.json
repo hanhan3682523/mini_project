@@ -9,7 +9,7 @@
 		"newFeature": true
 	},
 	"appid": "wxa6d2799e4c2b2c55",
-	"projectname": "mini",
+	"projectname": "%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%80%9A",
 	"libVersion": "2.2.5",
 	"condition": {
 		"search": {
@@ -28,12 +28,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "用户授权",
+					"pathName": "pages/auth/index"
 				}
 			]
 		}

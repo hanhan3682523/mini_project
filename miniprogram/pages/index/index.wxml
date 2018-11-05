@@ -1,11 +1,22 @@
 <!--index.wxml-->
 <view class="index-page">
-  <view class="userinfo">
+    <view class="userinfo">
     <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
+        open-type="getUserInfo" 
+        bindgetuserinfo="onGetUserInfo"
+        class="userinfo-avatar"
+        style="background-image: url({{avatarUrl}})"
     ></button>
-  </view>
+    <text class="name">{{userInfo.nickName}}</text>
+    </view>
+    <!-- 分类列表 -->
+    <view class="list">
+        <view wx:for="{{classifyList}}" wx:key="{{item._id}}" class="item">
+            <view class="icon">
+                <image class="img" src="{{item.icon}}"></image>
+            </view>
+            <text class="txt">{{item.name}}</text>
+        </view>
+    </view>
+    
 </view>

@@ -7,7 +7,11 @@
 //小程序api promise对象
 import { promise, cloudPromise } from './promise'
 
+//操作数据库方法
+import dbFun from './database'
+
 export {
     promise,
-    cloudPromise
+    cloudPromise,
+    dbFun
 }

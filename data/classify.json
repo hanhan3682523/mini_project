@@ -1,0 +1,36 @@
+{
+    "index":1,
+    "name":"HTML",
+    "type":"html",
+    "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/html.png"
+}
+{
+    "index":1,
+    "name":"CSS",
+    "type":"css",
+    "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/css.png"
+}
+{
+    "index":1,
+    "name":"JS",
+    "type":"js",
+    "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/js.png"
+}
+{
+    "index":1,
+    "name":"NODEJS",
+    "type":"nodejs",
+    "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/nodejs.png"
+}
+{
+    "index":1,
+    "name":"VUE",
+    "type":"vue",
+    "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/vue.png"
+}
+{
+    "index":1,
+    "name":"REACT",
+    "type":"react",
+    "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/react.png"
+}

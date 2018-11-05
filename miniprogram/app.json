@@ -2,6 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/auth/index",
+        "pages/my/index",
         "pages/userConsole/userConsole",
         "pages/storageConsole/storageConsole",
         "pages/databaseGuide/databaseGuide",
@@ -15,5 +16,25 @@
         "navigationBarBackgroundColor": "#F6F6F6",
         "navigationBarTitleText": "前端面试通",
         "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "position": "bottom",
+        "color": "#333333",
+        "selectedColor": "#ff6600",
+        "borderStyle": "white",
+        "backgroundColor": "#fefefe",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "学习",
+                "iconPath": "images/index.png",
+                "selectedIconPath": "images/indexactive.png"
+            },
+            {
+                "pagePath": "pages/my/index",
+                "text": "我的",
+                "iconPath": "images/user.png",
+                "selectedIconPath": "images/useractive.png"
+            }
+        ]
     }
 }

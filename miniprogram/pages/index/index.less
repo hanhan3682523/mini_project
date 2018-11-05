@@ -1,4 +1,4 @@
-//out: index.wxss
+// out: index.wxss, compress:true, sourceMap:false
 
 page {
     background: #f6f6f6;
@@ -24,6 +24,39 @@ page {
         
         .userinfo-avatar:after {
             border: none;
+        }
+        .name{
+            font-size: 30rpx;
+            color: #000;
+            margin-bottom: 10rpx;
+        }
+    }
+
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60rpx;
+        width: 750rpx;
+        .item{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            background: #fff;
+            width: 250rpx;
+            padding: 20rpx 0;
+            border-right:1px solid #ddd;
+            border-bottom:1px solid #ddd;
+            box-sizing:border-box;
+            .icon{
+                .img{
+                    width: 160rpx;
+                    height: 160rpx;
+                }
+            }
+            .txt{
+                font-size: 28rpx;
+                color: #333;
+            }
         }
     }
 }

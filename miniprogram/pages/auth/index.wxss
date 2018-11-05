@@ -5,20 +5,39 @@ page {
   justify-content: flex-start;
   height: 100%;
 }
-.container {
+.auth-page {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
-  justify-content: center;
 }
-.container .userinfo-avatar {
-  width: 700rpx;
-  height: 100rpx;
+.auth-page .img {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  margin-top: 200rpx;
+}
+.auth-page .title {
+  font-size: 30rpx;
+  color: #222;
+  font-weight: 600;
+  margin-top: 80rpx;
+}
+.auth-page .des {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 10rpx;
+}
+.auth-page .userinfo-avatar {
+  width: 680rpx;
+  height: 90rpx;
   margin: 20rpx;
-  background: linear-gradient(to right, red, orange);
+  background: linear-gradient(to right, #ff6e00, #ff9400);
   color: #fff;
-  line-height: 100rpx;
+  line-height: 90rpx;
   font-size: 36rpx;
+  margin-top: 80rpx;
 }
-.container .userinfo-avatar:after {
+.auth-page .userinfo-avatar:after {
   border: none;
 }
