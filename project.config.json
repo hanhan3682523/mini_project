@@ -28,14 +28,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
 				{
 					"id": -1,
 					"name": "用户授权",
@@ -45,7 +39,14 @@
 				{
 					"id": -1,
 					"name": "我的",
-					"pathName": "pages/my/index"
+					"pathName": "pages/my/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "列表",
+					"pathName": "pages/list/index",
+					"query": "type=html"
 				}
 			]
 		}

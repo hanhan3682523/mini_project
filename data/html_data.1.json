@@ -1,0 +1,28 @@
+{
+    "type": "html",
+    "title": "",
+    "des": "DOCTYPE有什么作用？HTML4和HTML5有什么区别？",
+    "answer": "1、DOCTYPE作用：DOCTYPE是document type的简写，它并不是HTML标签，<!DOCTYPE>必须是HTML文档的第一行，位于<html>标签之前。2、在HTML4.01中，<!DOCTYPE>声明引用DTD(文档类型定义)，因为HTML4.01基于SGML。DTD规定了标记语言的规则，这样浏览器才能正确展示内容。HTML5不基于SGML，所以不需要引用DTD。",
+    "img": ""
+}
+{
+    "type": "html",
+    "title": "",
+    "des": "标准模式与混杂模式如何区分？它们有何意义?",
+    "answer": "1、标准模式是一种要求严格的DTD(文档类型定义)，根据web标准去解析页面的模式。2、混杂模式是一种向后兼容的模式，是实现IE5.5以下版本浏览器的渲染模式。3、意义：IE5.5引入了文档模式的概念，通过使用DOCTYPE实现模式切换，它的主要作用是告诉浏览器以哪种模式呈现，如何解析文档，也就是说两种模式主要影响CSS内容的呈现，某些情况下也会影响JavaScript的执行。",
+    "img": ""
+}
+{
+    "type": "html",
+    "title": "",
+    "des": "行内元素有哪些？块级元素有哪些？ 空(void)元素有那些?",
+    "answer": "1、行内元素：a span img input select ,2、块级元素：div ul ol li dl dt dd h1 p,3、空元素：<br>、<hr>、<link>、<meta>",
+    "img": ""
+}
+{
+    "type": "html",
+    "title": "",
+    "des": "行内元素、块状元素、行内块状元素有什么区别？",
+    "answer": "1、行内元素设置高度无效、对magin只设置左右方向有效，上下无效，padding设置上下左右都有效，不会自动换行。2、块状元素高度可用，magin和padding有效，可自动换行，多个块状元素放一起，默认从上到下。3、行内块状元素，综合了行内元素和块状元素的特性，但是各有取舍，不自动换行，高度有效，默认从左到右。",
+    "img": ""
+}

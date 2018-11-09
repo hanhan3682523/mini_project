@@ -7,7 +7,8 @@
 const const_data = {
     tablename: {
         'user': 'user',
-        'classify':'classify'
+        'classify':'classify',
+        'questions':'questions'
     }
 };
 

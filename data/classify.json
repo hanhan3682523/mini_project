@@ -5,31 +5,31 @@
     "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/html.png"
 }
 {
-    "index":1,
+    "index":2,
     "name":"CSS",
     "type":"css",
     "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/css.png"
 }
 {
-    "index":1,
+    "index":3,
     "name":"JS",
     "type":"js",
     "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/js.png"
 }
 {
-    "index":1,
+    "index":4,
     "name":"NODEJS",
     "type":"nodejs",
     "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/nodejs.png"
 }
 {
-    "index":1,
+    "index":5,
     "name":"VUE",
     "type":"vue",
     "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/vue.png"
 }
 {
-    "index":1,
+    "index":6,
     "name":"REACT",
     "type":"react",
     "icon":"https://7072-pre-d18d79-1257978176.tcb.qcloud.la/classify/react.png"

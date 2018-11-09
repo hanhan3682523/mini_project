@@ -1,0 +1,7 @@
+{
+    "type": "css",
+    "title": "",
+    "des": "简要描述Vue的生命周期？",
+    "answer": "1、创建：(beforeCreate,create); 2、挂载(beforeMount,mounted);3、更新(beforeUpdate、updated);4、销毁(beforeDestory、destroyed)",
+    "img": ""
+}

@@ -17,17 +17,27 @@ Page({
         classifyList: []
     },
 
-    onLoad: function() {
+    onLoad: function () {
 
     },
 
     /*
         页面展示时执行
     */
-    onShow: function() {
+    onShow: function () {
         this.init();
         //获取分类
         this.getClassify();
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareAppMessage: function () {
+        return {
+            title: '前端面试通，助你一路通关。',
+            path: '/pages/index/index'
+        };
     },
 
     /*
@@ -119,5 +129,24 @@ Page({
                 classifyList: data
             });
         });
+    },
+
+    /*
+        跳转到问题页面
+    */
+    goToList(e) {
+        //分类
+        let _classify = e.currentTarget.dataset.classify;
+        if (_classify) {
+            console.info('当前分类：', _classify);
+            wx.navigateTo({
+                url: '/pages/list/index?type=' + _classify
+            });
+        } else {
+            wx.showToast({
+                title: '数据正在更新中...',
+                duration: 2000
+            });
+        }
     }
 })

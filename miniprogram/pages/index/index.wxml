@@ -11,7 +11,7 @@
     </view>
     <!-- 分类列表 -->
     <view class="list">
-        <view wx:for="{{classifyList}}" wx:key="{{item._id}}" class="item">
+        <view wx:for="{{classifyList}}" wx:key="{{item._id}}" class="item" data-classify="{{item.type}}" bindtap="goToList">
             <view class="icon">
                 <image class="img" src="{{item.icon}}"></image>
             </view>

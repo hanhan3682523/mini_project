@@ -1,0 +1,47 @@
+<view class="list-page">
+    <view class="content">
+        <swiper class="swiper" duration="400">
+        <block wx:for="{{list}}" wx:key="{{index}}">
+            <swiper-item class="swiper-item">
+                <scroll-view scroll-y style="height: 100%;">
+                <view class="questions">
+                    <view class="header">
+                        <text>{{title}}</text>
+                        <view>
+                            <text class="index">{{index+1}}</text>/
+                            <text>{{list.length}}</text>
+                        </view>
+                    </view>
+                    <view class="item item{{index+1}}">
+                        <!-- 问题描述 -->
+                        <view class="question-des">
+                            {{index+1}}：{{item.des}}
+                        </view>
+                        <!-- 我的回答 -->
+                        <view class="question-my">
+                            <view class="my">请填写答案：</view>
+                            <input bindinput="bindKeyInput" placeholder="请输入..." maxlength="-1"/>
+                            <view class="text">
+                                {{myanswer}}
+                            </view>
+                        </view>
+                        <!-- 问题解答 -->
+                        <view class="question-answer">
+                            <view class="des" bindtap="showAnswer" data-currentindex="{{index}}">点我查看推荐答案></view>
+                            <view wx:if="{{index==currentIndex}}" class="answer">推荐回答：{{item.answer}}</view>
+                            <!-- <view class="answer">推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答推荐回答123</view> -->
+                            <view class="img" wx:if="{{index==currentIndex && item.img}}">
+                                <image mode="widthFix" src="{{item.img}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                </scroll-view>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+    <view class="footer">
+        <view class="timer">已用时：{{timer}}</view>
+    </view>
+</view>

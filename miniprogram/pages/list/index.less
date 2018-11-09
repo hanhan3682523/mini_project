@@ -1,0 +1,99 @@
+// out: index.wxss, compress:true, sourceMap:false
+
+page {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    color: #333;
+}
+.list-page{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+
+    // 内容
+    .content{
+        flex: 1;
+        .swiper{
+            height: 100%;
+            .swiper-item{
+                height: 100%;
+                .questions{
+                    height:100%;
+                    .header{
+                        height: 100rpx;
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding:0 30rpx;
+                        font-size: 28rpx;
+                        color: #333;
+                        .index{
+                            color: #f60;
+                            font-size: 32rpx;
+                        }
+                    }
+                    .item{
+                        width: 750rpx;
+                        .question-des{
+                            font-size: 30rpx;
+                            padding: 20rpx 30rpx;
+                        }
+                        .question-my{
+                            .my{
+                                font-size: 30rpx;
+                                padding: 20rpx 30rpx;
+                            }
+                            input{
+                                font-size: 30rpx;
+                                cursor: pointer;
+                                margin: 20rpx 30rpx;
+                                border: 1px solid rgba(0,0,0,0.1);
+                                padding-left: 8rpx;
+                                height: 80rpx;
+                            }
+                            .text{
+                                background: #fff;
+                                margin: 20rpx 30rpx;
+                                min-height:180rpx;
+                                padding: 6rpx 8rpx;
+                                border: 1px solid rgba(0,0,0,0.1);
+                                word-break: break-all;
+                                font-size: 30rpx;
+                            }
+                        }
+                        .question-answer{
+                            font-size: 30rpx;
+                            .des{
+                                padding: 20rpx 30rpx;
+                                color: #f60;
+                            }
+                            .answer{
+                                padding: 20rpx 30rpx;
+                            }
+                            .img{
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 50rpx;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // 底部
+    .footer{
+        height: 140rpx;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32rpx;
+    }
+}

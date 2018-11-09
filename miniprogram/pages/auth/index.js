@@ -13,7 +13,8 @@ Page({
     onGetUserInfo: function(e) {
         console.log(123);
         if (e.detail.userInfo) {
-            wx.redirectTo({
+            console.log(e.detail.userInfo);
+            wx.switchTab({
                 url: '/pages/index/index'
             });
         }
